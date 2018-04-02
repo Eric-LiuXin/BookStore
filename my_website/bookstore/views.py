@@ -26,3 +26,13 @@ def user(request):
     html = template.render(locals())
 
     return HttpResponse(html)
+
+def details(request, id):
+    template = get_template('details.html')
+    try:
+        book = Books.objects.get(id=id)
+        if book != None:
+            html = template.render(locals())
+            return HttpResponse(html)
+    except:
+        return credits('/')

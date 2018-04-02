@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="title">
+        <span class="title_icon">
+            <img src="/static/images/bullet1.gif" alt="" title="">
+        </span>
+        {{ book.name }}
+    </div>
+    <div class="feat_prod_box_details">
+            <div class="prod_img"><a href="details.htm"><img src="/{{ book.cover }}/" alt="" title="" border="0"></a>
+                <br><br>
+                <a href="images/big_pic.jpg" rel="lightbox"><img src="/static/images/download.jpg" alt="" title="" border="0"></a>
+            </div>
+            <div class="prod_det_box_details">
+                <div class="box_top_details"></div>
+                <div class="box_center_details">
+                    <div class="prod_title">简介</div>
+                    <p class="details">{{ book.intro }}</p>
+                    <br>
+                    <div class="prod_title">更新日期</div>
+                    <p class="details">{{ book.create_date }}</p>
+                    <div class="clear"></div>
+                </div>
+                <div class="box_bottom_details"></div>
+            </div>
+            <div class="clear"></div>
+    </div>
+    <div class="forum">
+        <div class="clear"></div>
+        <div class="title">
+            <span class="title_icon">
+                <img src="/static/images/bullet1.gif" alt="" title="">
+            </span>
+            讨论区
+        </div>
+    </div>
+{% endblock %}
