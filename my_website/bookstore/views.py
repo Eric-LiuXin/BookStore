@@ -11,3 +11,18 @@ def homepage(request):
     html = template.render(locals())
 
     return HttpResponse(html)
+
+def shelf(request):
+    template = get_template('shelf.html')
+    books = Books.objects.all()
+
+    html = template.render(locals())
+
+    return HttpResponse(html)
+
+def user(request):
+    template = get_template('user.html')
+
+    html = template.render(locals())
+
+    return HttpResponse(html)

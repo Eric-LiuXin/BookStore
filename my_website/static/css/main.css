@@ -9,12 +9,16 @@ h1 { font: normal 2.4em Georgia, Arial, Sans-Serif; margin: 15px 0 0 5px; }
 /*--------feat_prod_box-----------*/
 p{padding:5px 0 5px 0;margin:0px;text-align:justify;line-height:19px;}
 
-.feat_prod_box { height: 150px;padding: 10px 0 10px 10px; margin: 0 20px 20px 0; border-bottom: 1px #b2b2b2 dashed; clear: both;}
+.feat_prod_box { height: 180px;padding: 10px 0 10px 10px; margin: 0 20px 20px 0; border-bottom: 1px #b2b2b2 dashed; clear: both;}
 .prod_img { float: left; padding: 0 5px 0 0; text-align: center;}
 .prod_det_box{background:url(../images/new_prod_box.jpg) no-repeat center;width:385px;height: 130px; float:left; padding:15px 0 0 25px; position:relative;}
 .prod_title { color: #f8981d; padding: 5px 0 0 5px; font-size: 13px;}
 p.details { padding: 5px 30px 5px 5px; font-size: 11px; margin: 0px; text-align: justify; line-height: 19px;}
 
+.new_prod_box { float: left; text-align: center; padding: 25px;}
+.new_prod_box a { padding: 5px 0 5px 0; color: #b5b5b6; text-decoration: none; display: block;}
+.new_prod_bg { width: 132px; height: 175px; text-align: center; background: url(../images/prod_box.jpg) no-repeat center; position: relative;}
+img.thumb {padding: 10px 0 0 0;}
 
 #logo { float: left; border-bottom: 5px solid #7DD0F1; height: 58px; width: 500px; }
 	h1 { color: #299DCA;	background: inherit; text-decoration: none; }

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    {% for book in books %}
+        <div class="new_prod_box">
+             <a href="details.htm">{{ book.name }}</a>
+             <div class="new_prod_bg">
+                 <a href="details.htm"><img src='/{{ book.cover }}' alt="" title="" class="thumb" border="0"></a>
+             </div>
+         </div>
+    {% endfor %}
+{% endblock %}
